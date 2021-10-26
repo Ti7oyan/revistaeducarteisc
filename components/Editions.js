@@ -21,7 +21,7 @@ export default function Editions() {
                                 loading="lazy"
                                 layout="fill"
                             />
-                            <Button onClick={() => {window.location = item.link}} className="w-full m-auto mt-5" variant="outlined">Leeme!</Button>
+                            <Button onClick={() => {window.location = item.link}} style={{margin: 'auto', marginTop: '1.25rem'}} className="w-full" variant="outlined">Leeme!</Button>
                         </ImageListItem>
                     ))}
                 </ImageList>
