@@ -30,7 +30,7 @@ export default function Home() {
         <section id="content" className="grid grid-cols-1 gap-12 grid-row text-center p-5">
           <Title />
           <About />
-          <span id="editions" />
+          <span className="h-10" id="editions" />
           <Editions />
           <span className="h-0" id="blogger" />
           <Blogger />
