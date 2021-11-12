@@ -30,27 +30,51 @@ export class YearEditions extends React.Component {
 
     render() {
         return (
-            <div className id={this.props.year}>
-                <h4 className="text-xl p-2 md:text-2xl underline">{this.props.year}</h4>
-                <Box className="m-auto md:w-auto xl:w-8/12 2xl:w-8/12 overflow-hidden my-3">
-                    <ImageList variant="quilted" cols={2} gap={8}>
-                        {magazines[this.props.year].map((item) => (
-                            <ImageListItem className="mb-16 p-1" key={item.img}>
-                                <img
-                                    className="rounded-sm"
-                                    src={item.img}
-                                    srcSet={item.img}
-                                    alt={item.title}
-                                    loading="lazy"
-                                    layout="fill"
-                                />
-                                <Button onClick={() => { window.location = item.link }} style={{ margin: 'auto', marginTop: '1.25rem' }} className="w-full" variant="outlined">Leeme!</Button>
-                            </ImageListItem>
-                        ))}
-                    </ImageList>
-                </Box>
-            </div>
-        )
+          <div className id={this.props.year}>
+            <h4 className="text-xl p-2 md:text-2xl underline">
+              {this.props.year}
+            </h4>
+            <Box className="m-auto md:w-auto xl:w-8/12 2xl:w-8/12 overflow-hidden my-3">
+              <ImageList variant="quilted" cols={2} gap={8}>
+                {magazines[this.props.year].map((item) => (
+                  <ImageListItem className="mb-16 p-1" key={item.img}>
+                    <img
+                      className="rounded-sm"
+                      src={item.img}
+                      srcSet={item.img}
+                      alt={item.title}
+                      loading="lazy"
+                      layout="fill"
+                    />
+                    <Button
+                      onClick={() => {
+                        window.location = item.link;
+                      }}
+                      style={{
+                        margin: "auto",
+                        marginTop: "1.25rem",
+                      }}
+                      className="w-full"
+                      variant="outlined"
+                    >
+                      Leeme!
+                    </Button>
+                  </ImageListItem>
+                ))}
+                <ImageListItem className="mb-16 p-1">
+                  <img
+                    className="rounded-sm"
+                    src="https://i.imgur.com/vniBUTI.png"
+                    srcSet="https://i.imgur.com/vniBUTI.png"
+                    alt="Próximamente - EDUCARTE"
+                    loading="lazy"
+                    layout="fill"
+                  />
+                </ImageListItem>
+              </ImageList>
+            </Box>
+          </div>
+        );
     }
 }
 
@@ -87,6 +111,11 @@ const magazines = {
             img: 'https://images.mywomags.com/public/smw.story/ZQAdSkFp8Ucm1ebCleGW3ITVm63/CiYYp0nZjODiAs9Aryq~g5KM%253Asmw%3A5RX3rjdyfZa5Q9ph3F725LSAK8J/xl',
             link: 'https://sancarevista.reader.mywomags.com/Educarte/',
             title: 'Revista Nº6 - Octubre'
+        },
+        {
+            img: 'https://images.mywomags.com/public/smw.story/TCkUqr5JnnRWxHKvAt14BGtDLsh/ueFugiv~LPfGYTcCiTanNR9u%253Asmw%3A4iRIJrW2CJ1EiZDKnIBKQaMQrSp/xl',
+            link:'https://revistasanca.reader.mywomags.com/EDUCARTE/',
+            title: 'Revista Nº7 - Noviembre'
         },
     ],
 }
