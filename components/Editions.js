@@ -61,16 +61,22 @@ export class YearEditions extends React.Component {
                     </Button>
                   </ImageListItem>
                 ))}
-                <ImageListItem className="mb-16 p-1">
-                  <img
-                    className="rounded-sm"
-                    src="https://i.imgur.com/vniBUTI.png"
-                    srcSet="https://i.imgur.com/vniBUTI.png"
-                    alt="Próximamente - EDUCARTE"
-                    loading="lazy"
-                    layout="fill"
-                  />
-                </ImageListItem>
+                {
+                  // Soon
+
+                  /* 
+                  <ImageListItem className="mb-16 p-1">
+                    <img
+                      className="rounded-sm"
+                      src="https://i.imgur.com/vniBUTI.png"
+                      srcSet="https://i.imgur.com/vniBUTI.png"
+                      alt="Próximamente - EDUCARTE"
+                      loading="lazy"
+                      layout="fill"
+                    />
+                  </ImageListItem>
+                  */
+                }
               </ImageList>
             </Box>
           </div>
@@ -117,5 +123,10 @@ const magazines = {
             link:'https://revistasanca.reader.mywomags.com/EDUCARTE/',
             title: 'Revista Nº7 - Noviembre'
         },
+        {
+          img: 'https://images.mywomags.com/public/smw.story/Wf9XmP9P6Oza0wcCzyZH0cWweoN/hH3KKjQwhAL8RdfBtT2f9fWu%253Asmw%3ARtBmlrxkZjBdXNOmChPRuXnUYai/xl',
+          link: 'https://revisancan8.reader.mywomags.com/EDUCARTE/',
+          title: 'Revista Nº8 - Diciembre'
+        }
     ],
 }
