@@ -2,9 +2,12 @@ import Head from 'next/head';
 
 // Components
 import Navbar from './components/Navbar';
+import Title from './components/Title';
+import About from './components/About';
+import Editions from './components/Editions';
 
 const App = () => (
-  <main className="bg-trueGray-900 font-sans text-white">
+  <div className="font-sans text-white">
     <Head>
       <meta charSet="utf-8" />
       <meta name="robots" content="index, follow" />
@@ -21,8 +24,15 @@ const App = () => (
       <title>Revista EDUCARTE I.S.C</title>
     </Head>
 
-    <Navbar />
-  </main>
+    <main className="bg-trueGray-900">
+      <Navbar />
+      <section className="grid grid-cols-1 gap-12 text-center p-5">
+        <Title />
+        <About />
+        <Editions />
+      </section>
+    </main>
+  </div>
 );
 
 export default App;
