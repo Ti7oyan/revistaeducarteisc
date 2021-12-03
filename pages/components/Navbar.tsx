@@ -9,7 +9,7 @@ type NavbarType = {
 };
 
 const NavbarItem = ({ text, href, icon }: NavbarType) => (
-  <li className="mx-2 transition duration-100 hover:text-blue-300 hover:underline">
+  <li className="mx-2 transition duration-100 hover:text-blue-500 hover:underline">
     <a className="flex" href={href}>
       <i className="text-3xl lg:text-2xl self-center">{icon}</i>
       <p className="hidden lg:block mx-2 text-lg self-center">{text}</p>

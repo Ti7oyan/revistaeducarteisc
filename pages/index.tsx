@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import Title from './components/Title';
 import About from './components/About';
 import Editions from './components/Editions';
+import Blogger from './components/Blogger';
+import Footer from './components/Footer';
 
 const App = () => (
   <div className="font-sans text-white">
@@ -30,7 +32,9 @@ const App = () => (
         <Title />
         <About />
         <Editions />
+        <Blogger />
       </section>
+      <Footer />
     </main>
   </div>
 );

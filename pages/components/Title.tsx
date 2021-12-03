@@ -9,7 +9,7 @@ type SocialType = {
 
 const SocialIcon = ({ href, icon }: SocialType) => (
   <a className="m-auto" href={href} target="_blank" rel="noreferrer">
-    <div className="text-3xl border-b rounded-sm p-1 transition duration-150 hover:text-blue-300 hover:border-blue-300">
+    <div className="text-3xl border-b rounded-sm p-1 transition duration-150 hover:text-blue-500 hover:border-blue-500">
       {icon}
     </div>
   </a>

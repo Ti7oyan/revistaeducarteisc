@@ -2,7 +2,6 @@
 import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import Button from '@mui/material/Button';
 
 // Editions
 import * as editionsData from './editions.json';
@@ -22,7 +21,7 @@ const YearEditions = ({ year }: YearType) => (
     <h4 className="text-xl p-2 underline">
       {year}
     </h4>
-    <Box className="m-auto my-3 overflow-hidden">
+    <Box className="m-auto my-3 overflow-hidden lg:w-4/6">
       <ImageList variant="quilted" cols={2} gap={8}>
         {editionsData[year].map((edition: EditionsType) => (
           <ImageListItem className="mb-16 p-1" key={edition.title}>
@@ -33,17 +32,14 @@ const YearEditions = ({ year }: YearType) => (
               alt={edition.title}
               loading="lazy"
             />
-            <Button
-              onClick={() => {
-                window.location.assign(edition.link);
-              }}
-              style={{
-                margin: 'auto',
-                marginTop: '1.25rem',
-              }}
-            >
-              Leeme!
-            </Button>
+            <a href={edition.link} target="_blank" rel="noreferrer">
+              <button
+                type="button"
+                className="button p-5"
+              >
+                ¡Leeme!
+              </button>
+            </a>
           </ImageListItem>
         ))}
       </ImageList>
