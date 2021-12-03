@@ -3,5 +3,5 @@
 @tailwind components;
 
 .button {
-    @apply m-2 rounded-md transition duration-200 bg-blue-600 hover:bg-blue-700 active:bg-blue-800
+    @apply m-2 rounded-md transition duration-200 bg-blue-600 hover:bg-blue-700 active:bg-blue-800;
 }
