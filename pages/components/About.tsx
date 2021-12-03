@@ -6,7 +6,7 @@ const About = () => (
         <strong>EDUCARTE </strong>
         es una revista digital lanzada mensualmente por los estudiantes de quinto año del Instituto
         San Carlos de Malagueño. Incluye temas de interés y cultura general, como literatura, arte,
-        música, tradiciones y muchas cosas más que no se limitan solo a nuestro país.
+        música, tradiciones y muchas cosas más que buscan abarcar regiones de todo el mundo.
       </p>
     </div>
   </article>
