@@ -11,7 +11,7 @@ const Footer = () => (
       {' '}
       <a
         className="text-blue-800 underline"
-        href="https://instagram.com/ti7oyan"
+        href="https://instagram.com/ticianomorvan"
         target="_blank"
         rel="noreferrer"
       >
