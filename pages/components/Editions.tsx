@@ -24,7 +24,7 @@ const YearEditions = ({ year }: YearType) => (
     <Box className="m-auto my-3 overflow-hidden lg:w-4/6">
       <ImageList variant="quilted" cols={2} gap={8}>
         {editionsData[year].map((edition: EditionsType) => (
-          <ImageListItem className="mb-16 p-1" key={edition.title}>
+          <ImageListItem className="mb-16 p-2" key={edition.title}>
             <img
               className="rounded-md"
               src={edition.image}
@@ -50,6 +50,7 @@ const YearEditions = ({ year }: YearType) => (
 const Editions = () => (
   <section id="editions" className="m-auto">
     <h3 className="text-3xl p-5">EDICIONES</h3>
+    <YearEditions year="2022" />
     <YearEditions year="2021" />
   </section>
 );
